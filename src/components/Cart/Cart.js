@@ -2,6 +2,12 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = ({cart}) => {
+    // console.log(cart);
+let time=0;
+for(const data of cart){
+   time= time + parseInt(data.time);
+}
+
     return (
      
            <div>
@@ -27,18 +33,20 @@ const Cart = ({cart}) => {
             <p>Add a break</p>
             
             <button className='other-container'>
-               <button className='btn-1'>10s</button>
-               <button className='btn-1'>10s</button>
-               <button className='btn-1'>10s</button>
-               <button className='btn-1'>10s</button>
-               <button className='btn-1'>10s</button>
+               <button className='btn-1'>20s</button>
+               <button className='btn-1'>15s</button>
+               <button className='btn-1'>30s</button>
+               <button className='btn-1'>25s</button>
+               <button className='btn-1'>40s</button>
             </button>
             <br />
             <p>Exercise Details</p>
-            <button className='ex-time'>Exercise time</button>
+            <button className='ex-time'>
+               <h4> Exercise time </h4>
+                <p> {time}sec</p></button>
             <br />
             <br />
-            <button className='br-time'>Break time</button>
+            <button className='br-time'>Break time </button>
             <br />
             <br />
             <button className='activity'>Activity Completed</button>
