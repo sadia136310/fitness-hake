@@ -1,0 +1,36 @@
+.cart-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    border-radius: 10px;
+    border: none;
+   
+}
+.other-container{
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+.btn-1{
+    padding: 4px;
+    border-radius: 50%;
+    background-color: palevioletred;
+    border: none;
+}
+
+.ex-time,.br-time{
+    border-radius: 5px;
+    border: none;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.activity{
+    border-radius: 5px;
+    border: none;
+  background-color: palevioletred;
+    padding: 20px 20px;
+}

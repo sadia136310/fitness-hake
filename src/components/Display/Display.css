@@ -1,23 +1,21 @@
 .display{
- border: 2px solid gold;
-
- gap: 20px;
+ border: 2px solid palevioletred;
+border-radius: 10px;
+ gap: 10px;
  width: 260px;
- height: 420px;
+ height: 360px;
 }
 .display img{
-height: 150px;
+height: 120px;
 width: 220px;
-padding-left: 20px;
-padding-right: 20px;
+padding: 20px;
 
 }
 .display-container{
-    padding: 10px;
+    padding-left: 60px;
 }
 .btn{
-   margin-left: 80px;
-   margin-bottom: 10px;
+  
    background-color:palevioletred;
    border: none;
    padding: 10px;

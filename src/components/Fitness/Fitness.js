@@ -4,14 +4,17 @@ import { faDumbbell} from '@fortawesome/free-solid-svg-icons'
 
 import './Fitness.css'
 import Display from '../Display/Display';
+import Cart from '../Cart/Cart';
 const Fitness = () => {
 const [datas,setDatas]=useState([]);
 
 useEffect(()=>{
     fetch('datas.json')
     .then(res=>res.json())
-     .then(data=>setDatas(data))
-},[])
+     .then(data=> setDatas(data))
+},[]);
+
+
 
     return (
         
@@ -24,19 +27,18 @@ useEffect(()=>{
        <h3>Select today's activity!</h3>
             <div className='container'>
             <div className="fitness-container">
-
-          {/* <h3>data: {datas.length}</h3> */}
-       
-          {
+            {
             datas.map(data=><Display 
                 key={data.id}
                 data={data}
+             
                 ></Display>)
-          }
-          
+            }
             </div>
+
+            
             <div className="cart-container">
-                <h1>cart</h1>
+               <Cart></Cart>
             </div>
         </div>
         </div>
