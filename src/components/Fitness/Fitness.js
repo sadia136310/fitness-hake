@@ -6,7 +6,8 @@ import './Fitness.css'
 import Display from '../Display/Display';
 import Cart from '../Cart/Cart';
 const Fitness = () => {
-const [datas,setDatas]=useState([]);
+const [ datas, setDatas]=useState([]);
+const [ cart, setCart]=useState([]);
 
 useEffect(()=>{
     fetch('datas.json')
@@ -14,10 +15,12 @@ useEffect(()=>{
      .then(data=> setDatas(data))
 },[]);
 
-
+const handleClick=(data)=>{
+   const newCart=[...cart,data];
+   setCart(newCart);
+}
 
     return (
-        
         <div className='title-container'>
             <div className='club'>
           <FontAwesomeIcon className='icon' icon={faDumbbell}></FontAwesomeIcon>
@@ -31,14 +34,14 @@ useEffect(()=>{
             datas.map(data=><Display 
                 key={data.id}
                 data={data}
-             
+                handleClick={handleClick}
                 ></Display>)
             }
             </div>
-
-            
             <div className="cart-container">
-               <Cart></Cart>
+               <Cart 
+               cart={cart}
+               ></Cart>
             </div>
         </div>
         </div>

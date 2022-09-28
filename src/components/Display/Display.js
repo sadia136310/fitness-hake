@@ -1,10 +1,12 @@
 import React from 'react';
 import './Display.css'
 
-const Display = (props) => {
- 
+const Display = ({data,handleClick}) => {
+
     // console.log(props);
-    const {name,img,age,time}=props.data;
+    const {name,img,age,time}=data;
+
+    
     return (
         <div className='display'>
             <img src={img} alt="" />
@@ -13,7 +15,7 @@ const Display = (props) => {
           <h2>{name}</h2>
             <h5>For Age: {age}</h5>
             <h5>Time required: {time}</h5>
-            <button className='btn'>Add to cart </button>
+            <button onClick={()=>handleClick(data)} className='btn'>Add to cart </button>
           </div>
         </div>
     );
