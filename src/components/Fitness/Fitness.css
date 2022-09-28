@@ -1,0 +1,33 @@
+.title-container{
+    background-color: lightblue;
+    padding-left:100px ;
+}
+.container{
+    
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.fitness-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   row-gap: 30px;
+}
+
+.club{
+    display: flex;
+    align-items: center;
+    
+ 
+}
+.title{
+    margin-top: 50px;
+    color: slateblue;
+}
+.icon{
+    color: orangered;
+    margin-top:30px;
+    margin-right:10px ;
+}
+.all-data{
+
+}

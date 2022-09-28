@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "Bridge Pose",
+    "img": "https://www.arhantayoga.org/wp-content/uploads/2022/03/Half-Bridge-Pose-Ardha-Setu-Bandhasana.jpg",
+    "benefits": "Stretches the chest, neck, spine, and hips.",
+    "age": "20-25",
+    "time": "30s"
+  },
+  {
+    "id": "2",
+    "name": "Plank",
+    "img": "https://workouttrends.com/wp-content/uploads/2014/07/Yoga-Poses-Plank-Pose-Chaturanga-Dandasana.jpg",
+    "benefits": "Planks can help improve posture & boosts mental health.",
+    "age": "20-25",
+    "time": "30s"
+  },
+  {
+    "id": "3",
+    "name": "Bow Pose",
+    "img": "https://www.yogaclassplan.com/wp-content/uploads/2017/04/Full-Bow-Pose.jpg",
+    "benefits": "Also improves posture.It may help relieve back pain",
+    "age": "20-25",
+    "time": "30s"
+  },
+
+  {
+    "id": "4",
+    "name": "Side Lunge",
+    "img": "https://t4.ftcdn.net/jpg/02/75/88/91/360_F_275889129_IDzvhTdhMZe8iHKsX0c14V1Ai0ubXDdg.jpg",
+    "benefits": "The side lunge is warm up your hips before leg training.",
+    "age": "20-25",
+    "time": "30s"
+  },
+  {
+    "id": "5",
+    "name": "ABS Variation",
+   
+    "img": "https://img.livestrong.com/375/clsd/getty/20d9f6de8bb343a4b61dd8a6a043bc74.jpg",
+    "benefits":"Engage the muscles located on each side of abdomen.",
+    "age": "20-25",
+    "time": "30s"
+  },
+  {
+    "id": "6",
+    "name": "Dumbbell Squats",
+    
+    "img": "https://www.shape.com/thmb/My9exW67o-GaX2vS59kr5iLZQfU=/735x0/GettyImages-947688154-2000-9f92c84485c84e8689310dda81544d50.jpg",
+    
+    "benefits": "Dumbbell squats strengthen your lower body and core.",
+    "age": "20-25",
+    "time": "30s"
+  }
+
+
+  
+]
