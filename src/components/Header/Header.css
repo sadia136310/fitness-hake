@@ -1,0 +1,30 @@
+.title-container{
+    background-color: black;
+    padding-left:100px ;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+ 
+    margin-right: 50px;
+ 
+}
+
+.club{
+    display: flex;
+    align-items: center;
+    
+ 
+}
+.title{
+    margin-top: 20px;
+    color: slateblue;
+}
+.icon{
+    color: orangered;
+    margin-right:10px ;
+}

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDumbbell} from '@fortawesome/free-solid-svg-icons'
 
 import './Fitness.css'
 import Display from '../Display/Display';
@@ -21,13 +19,8 @@ const handleClick=(data)=>{
 }
 
     return (
-        <div className='title-container'>
-            <div className='club'>
-          <FontAwesomeIcon className='icon' icon={faDumbbell}></FontAwesomeIcon>
-          <h1 className='title'>Fitness Club</h1>
-       </div>
-
-       <h3>Select today's activity!</h3>
+        <div className='body'>
+            <h3>Select today's Exercise</h3>
             <div className='container'>
             <div className="fitness-container">
             {
