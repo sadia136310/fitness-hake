@@ -20,7 +20,7 @@ const handleClick=(data)=>{
 
     return (
         <div className='body'>
-            <h3>Select today's Exercise</h3>
+            <h3 className='select'>Select today's Exercise</h3>
             <div className='container'>
             <div className="fitness-container">
             {

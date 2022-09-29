@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <nav>
             <a href="/home">Home</a>
-            <a href="activity">Activity</a>
+            <a href="/activity">Activity</a>
             <a href="/about us">About Us</a>
         </nav>
         </div>
@@ -19,3 +19,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+

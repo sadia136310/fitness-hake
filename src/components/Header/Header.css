@@ -9,9 +9,7 @@
 nav a{
     text-decoration: none;
     color: white;
- 
     margin-right: 50px;
- 
 }
 
 .club{
@@ -27,4 +25,16 @@ nav a{
 .icon{
     color: orangered;
     margin-right:10px ;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .title-container{
+        padding-left:10px ;
+    }
+    nav a{
+     
+        margin-right: 10px;
+    }
+    
 }

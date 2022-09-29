@@ -5,9 +5,7 @@ const Blog = () => {
         <div>
             <div className='blog-container'>
             <h1>How Does React Work?</h1>
-            <p>While building client-side apps, a team of Facebook developers realized that the DOM is slow (The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.). So, to make it faster, React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM.
-            Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it’s worth keeping a DOM tree in it to speed up its manipulation.
-            Although React was conceived to be used in the browser, because of its design it can also be used in the server with Node.js. </p>
+            <p>React uses a declarative paradigm that makes it easier to reason about your application and aims to be both efficient and flexible. It designs simple views for each state in your application, and React will efficiently update and render just the right component when your data changes.</p>
 
             </div>
             <div className='blog-container'>
@@ -24,15 +22,7 @@ const Blog = () => {
             </div>
             <div className='blog-container'>
                 <h1>What else does useEffect data load? </h1>
-                <p > Validating input field
-                    <br />
-               Live filtering
-              <br />
-            Trigger animation on new array value
-           <br />
-          Update paragraph list on fetched API data update
-           <br />
-        Updating fetched API data to get BTC updated price</p>
+                <p > Accepts a function that contains imperative, possibly efficient code. Mutations,subscriptions, times logging,and other side effects are not allowed inside the main body of a function component (referred to as React's render phase). Doing so will lead to confusing bugs and inconsistencies in the UI.</p>
             </div>
         </div>
     );
