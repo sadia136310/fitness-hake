@@ -18,27 +18,38 @@ for(const data of cart){
 const [show,setShow]= useState(0);
 useEffect(()=>{
     const localStorageData=localStorage.getItem('break');
-    setShow(localStorageData);
-},[])
+  if(localStorageData){
+    setShow(JSON.parse(localStorageData));
+  }
+},[show])
 const handleShow1=()=>{
+    const cart=document.getElementById('btn-1').innerText;
+    localStorage.setItem('break',JSON.stringify(cart));
     setShow(0+10);
-    localStorage.setItem('break',10);
    }
 const handleShow2=()=>{
+    const cart=document.getElementById('btn-2').innerText;
+    localStorage.setItem('break',JSON.stringify(cart));
     setShow(0+20);
-    localStorage.setItem('break',20);
+   
 }
 const handleShow3=()=>{
+    const cart=document.getElementById('btn-3').innerText;
+    localStorage.setItem('break',JSON.stringify(cart));
     setShow(0+30);
-    localStorage.setItem('break',30);
+   
 }
 const handleShow4=()=>{
+    const cart=document.getElementById('btn-4').innerText;
+    localStorage.setItem('break',JSON.stringify(cart));
     setShow(0+40);
-    localStorage.setItem('break',40);
+
 }
 const handleShow5=()=>{
+    const cart=document.getElementById('btn-5').innerText;
+    localStorage.setItem('break',JSON.stringify(cart));
     setShow(0+50);
-    localStorage.setItem('break',50);
+   
 }
 
 const notify = () => {
@@ -76,15 +87,11 @@ const notify = () => {
             <h3>Add a break</h3>
             
             <button className='other-container'>
-               <button onClick={handleShow1} className='btn-1'>10</button>
-
-               <button onClick={handleShow2} className='btn-1'>20</button>
-
-               <button onClick={handleShow3} className='btn-1'>30</button>
-
-               <button onClick={handleShow4} className='btn-1'>40</button>
-
-               <button onClick={handleShow5} className='btn-1'>50</button>
+               <button onClick={handleShow1} className='btn' id='btn-1' >10</button>
+               <button onClick={handleShow2} className='btn' id='btn-2'>20</button>
+               <button onClick={handleShow3} className='btn' id='btn-3'>30</button>
+               <button onClick={handleShow4} className='btn' id='btn-4'>40</button>
+               <button onClick={handleShow5} className='btn' id='btn-5'>50</button>
             </button>
             <h3>Exercise Details</h3>
             <button className='ex-time'>

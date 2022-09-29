@@ -15,7 +15,7 @@ const Display = ({data,handleClick}) => {
           <h2>{name}</h2>
             <h5>For Age: {age}</h5>
             <h5>Time required: {time}</h5>
-            <button onClick={()=>handleClick(data)} className='btn'>Add to cart </button>
+            <button onClick={()=>handleClick(data)} className='btn-add'>Add to cart </button>
           </div>
         </div>
     );

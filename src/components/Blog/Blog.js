@@ -10,9 +10,29 @@ const Blog = () => {
             Although React was conceived to be used in the browser, because of its design it can also be used in the server with Node.js. </p>
 
             </div>
-            <div>
-                <h1>Difference between Props and State</h1>
-                <p></p>
+            <div className='blog-container'>
+                <h1>Difference Between Props and State</h1>
+                <p>1.Props are read-only.	State changes can be asynchronous.
+                    <br />
+               2.Props are immutable.	State is mutable.
+               <br />
+                 3.	Props allow you to pass data from one component to other components as an argument.	State holds information about the components.
+                 <br />
+               4.Props can be accessed by the child component.	State cannot be accessed by child components.
+               5.Props are used to communicate between components.	States can be used for rendering dynamic changes with the component.
+            6.	Stateless component can have Props.	Stateless components cannot have Stat</p>
+            </div>
+            <div className='blog-container'>
+                <h1>What else does useEffect data load? </h1>
+                <p > Validating input field
+                    <br />
+               Live filtering
+              <br />
+            Trigger animation on new array value
+           <br />
+          Update paragraph list on fetched API data update
+           <br />
+        Updating fetched API data to get BTC updated price</p>
             </div>
         </div>
     );

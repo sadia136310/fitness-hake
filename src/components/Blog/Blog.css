@@ -1,4 +1,11 @@
 .blog-container{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+
+    padding: 20px;
     border: 1px solid palevioletred;
+    background-color: plum
+   
     
 }
