@@ -11,7 +11,7 @@ function App() {
   <Header></Header>
       <Fitness></Fitness>
      
-   {/* <Blog></Blog> */}
+   <Blog></Blog>
     </div>
   );
 }
