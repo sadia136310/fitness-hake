@@ -21,7 +21,7 @@ const Blog = () => {
             6.	Stateless component can have Props.	Stateless components cannot have Stat</p>
             </div>
             <div className='blog-container'>
-                <h1>What else does useEffect data load? </h1>
+                <h1>What else does useEffect do other than data load? </h1>
                 <p > Accepts a function that contains imperative, possibly efficient code. Mutations,subscriptions, times logging,and other side effects are not allowed inside the main body of a function component (referred to as React's render phase). Doing so will lead to confusing bugs and inconsistencies in the UI.</p>
             </div>
         </div>
